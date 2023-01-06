@@ -4,6 +4,17 @@
 // Include any default variable overrides here (though functions won't be available)
 
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+$theme-colors: (
+  'primary':    #91562dff,
+  'secondary':  #ed3124ff,
+  'success':    #0d160bff,
+  'info':       #785589ff,
+  'warning':    #c1c1c1ff,
+  
+);
+
+
+
+@import "/node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
