@@ -16,7 +16,7 @@
     <header class="danger-bg-subtle">
       <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="img-logo"src="/assets/images/logopoopflix.png" alt="logopoopflix"><span>PoopFlix</span></a>
+          <a class="navbar-brand" href="index.html"><img class="img-logo"src="/assets/images/logopoopflix.png" alt="logopoopflix"><span>PoopFlix</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,19 +27,59 @@
               </li>
              
               <li class="nav-item">
-                <a class="nav-link" href="#">Nos envie filmes</a>
+                <a class="nav-link" href="#">Cadastre-se</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2 p-0" type="search" placeholder="procure por filmes lixosos ai" aria-label="Search">
+              <input class="form-control me-2 p-0 text-center" type="search" placeholder="procure por filmes lixosos ai" aria-label="Search">
               <button class="btn btn-outline-success" type="submit"><img class="img-search" src="/assets/images/cocolupa-removebg-preview.png" alt="logo poop pesquisa"></button>
             </form>
           </div>
         </div>
       </nav>
     </header>
-    <main>
-      
+    <main class="d-flex flex-column">
+      <div class="container py-5">
+        <div class="carousel slide" data-bs-ride="carousel" id="ads">
+            <div class="carousel-indicators">
+              <button class="active" data-bs-target="ads" data-bs-slide-to="0"></button>
+              <button class="" data-bs-target="ads" data-bs-slide-to="1"></button>
+              <button class="" data-bs-target="ads" data-bs-slide-to="2"></button></div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/1280/420?random=1" alt="">
+                <div class="carousel-caption">
+                  <h5>titulo</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, animi?</p>
+                </div>            
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/1280/420?random=2" alt="">
+                <div class="carousel-caption">
+                  <h5>titulo</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, animi?</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/1280/420?random=3" alt="">
+                <div class="carousel-caption">
+                  <h5>titulo</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, animi?</p>
+                </div>
+              </div>            
+            </div>
+            <div>
+              <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>          
+              </button>
+              <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>          
+              </button>
+            </div>          
+        </div>
+      </div>
+
+      <section id="cardfilms">
         <div class="d-flex m-3 justify-content-evenly flex-wrap">
           <div class="card card-films mb-3">
             <img src="..." class="card-img-top" alt="...">
@@ -94,32 +134,9 @@
           </div>                        
         </div>
 
-        <div class="d-flex m-3 justify-content-evenly flex-wrap">
-          <div class="card card-films mb-3">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mega Shark vs Crocossauro</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus id doloremque. Id perferendis accusantium dolorem, explicabo quibusdam minima laborum voluptatibus temporibus nihil? Ipsum vel dolore provident in ex doloribus.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card card-films mb-3">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mega Shark vs Crocossauro</h5>
-              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis illum culpa officiis blanditiis numquam recusandae ut sed molestias totam rerum est officia, cumque ex harum dolorem quam accusamus vero sapiente.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card card-films mb-3">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mega Shark vs Crocossauro</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, odio consectetur aliquid quos est accusamus! Odit nobis labore assumenda ut cumque quibusdam ratione. Nihil excepturi labore ad cupiditate nisi. Libero.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>             
-        </div>
+        
+      </section>
+
      
 
       
