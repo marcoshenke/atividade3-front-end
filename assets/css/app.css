@@ -1,0 +1,16 @@
+:root {
+--poop-brown: #91562dff;
+--red-pigment: #ed3124ff;
+--dark-jungle-green: #0d160bff;
+--french-lilac: #785589ff;
+--silver: #c1c1c1ff;
+}
+
+.img-logo {
+    width: 5rem;
+}
+
+.card-films {
+    width: 18rem;
+    
+}
