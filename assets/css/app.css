@@ -11,7 +11,8 @@
 }
 
 .img-search {
-    width: 3rem;
+    width: 5rem;
+    padding: 0;
 }
 
 .card-films {
@@ -20,6 +21,15 @@
 }
 
 .img-carousel {
-    width: 50rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.div-h5-40 {
+    width: 40% !important;
+}
+
+.div-h5-50 {
+    width: 40% !important;
 }
