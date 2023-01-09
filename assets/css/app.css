@@ -15,6 +15,10 @@
     padding: 0;
 }
 
+.link-hover:hover {
+    color: #c1c1c1ff !important;
+}
+
 .card-films {
     width: 18rem;
     
@@ -33,3 +37,36 @@
 .div-h5-50 {
     width: 40% !important;
 }
+
+main {
+    background-image: url("/assets/images/backgroundimagemain.jpg") !important;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-color: #0d160bff;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .col-8-sm {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .d-none-small {
+        display: none;
+    }
+
+    table {
+        margin: 2rem;
+    }
+}
+
+.transparent-background {
+    background-color: rgba(3, 1, 1, 0.733) !important;
+}
+

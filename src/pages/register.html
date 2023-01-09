@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta http-equiv="Content-Security-Policy" content=" * "> -->
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    
+  </head>
+  <body>
+
+        
+      
+    <header>
+      <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/src/index.html"><img class="img-logo"src="/assets/images/logopoopflix.png" alt="logopoopflix"><span class="fs-4 fw-bold">PoopFlix</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">              
+              <li class="nav-item">
+                <a class="nav-link fs-5 text-white link-hover fw-bold" href="listfilms.html">Filmes trashs</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link fs-5 text-white link-hover fw-bold" href="register.html">Cadastre-se</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 p-0 text-center" type="search" placeholder="procure por filmes trashosos" aria-label="Search">
+              <button class="btn btn-outline-success p-0"  type="submit"><img class="img-search" src="/assets/images/cocolupa-removebg-preview.png" alt="logo poop pesquisa"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <form>
+            <h1 class="text-center fs-1 text-white">Cadastro</h1>
+            <div class="mb-3">
+                <label for="name" class="form-label text-white fs-2">Nome completo</label>
+                <input type="email" class="form-control fs-3" id="name" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="age" class="form-label text-white fs-2">Quantos anos tem?</label>
+                <input type="number" class="form-control fs-3" id="age" aria-describedby="emailHelp">
+            </div>                
+            <div class="my-3">
+              <label for="exampleInputEmail1" class="form-label text-white fs-2">Email</label>
+              <input type="email" class="form-control fs-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text text-white">Nós nunca iremos compartilhar seu e-mail com ninguém.</div>
+            </div>
+            <div class="my-3">
+              <label for="exampleInputPassword1" class="form-label text-white fs-2">Senha</label>
+              <input type="password" class="form-control fs-3" id="exampleInputPassword1">
+            </div>
+            <div class="my-3 form-check d-flex">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-white fs-4" for="exampleCheck1">Aceito os termos de uso</label>
+            </div>
+            <button type="submit" class="btn w-50 align-items-center btn-primary">Cadastrar</button>
+          </form>
+
+      
+
+    </main>
+    <footer>
+      <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="img-logo"src="/assets/images/logopoopflix.png" alt="logopoopflix"><span class="fs-4 fw-bold">PoopFlix</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+            </svg> 
+          </button>          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">              
+              <li class="nav-item fs-5 mx-2 text-white-50 fw-bold">
+                Todos os direitos reservados
+              </li>             
+              <li class="nav-item fs-5 text-white-50 fw-bold">
+                contato: poopflix@poop.com.br
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    </footer>
+        
+  </body>
+  
+</html>
