@@ -40,30 +40,30 @@
       </nav>
     </header>
     <main class="d-flex flex-column justify-content-center align-items-center min-vh-100">
-        <form>
-            <h1 class="text-center fs-1 text-white">Cadastro</h1>
-            <div class="mb-3">
-                <label for="name" class="form-label text-white fs-2">Nome completo</label>
-                <input type="email" class="form-control fs-3" id="name" aria-describedby="emailHelp">
+        <form class="d-flex flex-column justify-content-center align-items-center">
+            <h1 class="text-center fs-2 text-white">Cadastro</h1>
+            <div class="my-1">
+                <label for="name" class="form-label text-white fs-3">Nome completo</label>
+                <input type="email" class="form-control fs-4" id="name" aria-describedby="emailHelp">
             </div>
-            <div class="mb-3">
-                <label for="age" class="form-label text-white fs-2">Quantos anos tem?</label>
-                <input type="number" class="form-control fs-3" id="age" aria-describedby="emailHelp">
+            <div class="my-1">
+                <label for="age" class="form-label text-white fs-3">Quantos anos tem?</label>
+                <input type="number" class="form-control fs-4 w-25" id="age" min="1" aria-describedby="emailHelp">
             </div>                
-            <div class="my-3">
-              <label for="exampleInputEmail1" class="form-label text-white fs-2">Email</label>
-              <input type="email" class="form-control fs-3" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text text-white">Nós nunca iremos compartilhar seu e-mail com ninguém.</div>
+            <div class="my-1">
+              <label for="exampleInputEmail1" class="form-label text-white fs-4">Email</label>
+              <input type="email" class="form-control fs-4" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text text-secondary text-bold">Nós nunca iremos compartilhar seu e-mail com ninguém.</div>
             </div>
-            <div class="my-3">
-              <label for="exampleInputPassword1" class="form-label text-white fs-2">Senha</label>
-              <input type="password" class="form-control fs-3" id="exampleInputPassword1">
+            <div class="my-1" >
+              <label for="exampleInputPassword1" class="form-label text-white fs-3">Senha</label>
+              <input type="password" class="form-control fs-4" id="exampleInputPassword1">
             </div>
-            <div class="my-3 form-check d-flex">
+            <div class="form-check my-1 d-flex">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label text-white fs-4" for="exampleCheck1">Aceito os termos de uso</label>
+              <label class="form-check-label text-secondary text-bold fs-5" for="exampleCheck1">Aceito os termos de uso</label>
             </div>
-            <button type="submit" class="btn w-50 align-items-center btn-primary">Cadastrar</button>
+            <button type="submit" class="btn my-1 w-75 align-items-center btn-primary">Cadastrar</button>
           </form>
 
       
