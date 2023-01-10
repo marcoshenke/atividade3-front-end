@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta http-equiv="Content-Security-Policy" content=" * "> -->
+    <meta http-equiv="Content-Security-Policy" content=" default 'self ; child-src 'self' https://www.youtube.com ;">
     <title>PoopFlix</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/app.css">
@@ -11,7 +11,7 @@
     
   </head>
   <body>     
-    <header>
+    <header class="fixed-top">
       <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid">
           <a class="navbar-brand" href="/src/index.html"><img class="img-logo"src="/assets/images/logopoopflix.png" alt="logopoopflix"><span class="fs-4 fw-bold">PoopFlix</span></a>
@@ -36,96 +36,113 @@
         </div>
       </nav>
     </header>
+
     <main class="d-flex flex-column min-vh-100">
-      <div class="container">
-        <div class="row rounded">
-          <div class="container py-5 col-8 col-8-sm">
-            <div class="carousel slide" data-bs-ride="carousel" id="ads">
-                <div class="carousel-indicators">
-                  <button class="active" data-bs-target="ads" data-bs-slide-to="0"></button>
-                  <button class="" data-bs-target="ads" data-bs-slide-to="1"></button>
-                  <button class="" data-bs-target="ads" data-bs-slide-to="2"></button>
-                  <button class="" data-bs-target="ads" data-bs-slide-to="3"></button>
-                  <button class="" data-bs-target="ads" data-bs-slide-to="4"></button>
-                  <button class="" data-bs-target="ads" data-bs-slide-to="5"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <a href="https://www.youtube.com/watch?time_continue=2&v=w_LOCHcunlI&embeds_euri=http%3A%2F%2F127.0.0.1%3A5500%2F&source_ve_path=MTM5MTE3LDEzOTExNw&feature=emb_logo" target="_blank"><img class="img-carousel border border-warning rounded border-5" src="/assets/images/thegingerbread.jpeg" alt="o biscoito assassino"></a>
-                    <div class="carousel-caption w-35 d-flex justify-content-center">
-                      <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background">O Biscoito Assassino</h5>
-                      
+      <section id="carousel">
+        <div class="container">
+          <div class="row rounded">
+            <div class="container py-5 col-8 col-8-sm">
+              <div class="carousel slide" data-bs-ride="carousel" id="ads">
+                  <div class="carousel-indicators">
+                    <button class="active" data-bs-target="ads" data-bs-slide-to="0"></button>
+                    <button class="" data-bs-target="ads" data-bs-slide-to="1"></button>
+                    <button class="" data-bs-target="ads" data-bs-slide-to="2"></button>
+                    <button class="" data-bs-target="ads" data-bs-slide-to="3"></button>
+                    <button class="" data-bs-target="ads" data-bs-slide-to="4"></button>
+                    <button class="" data-bs-target="ads" data-bs-slide-to="5"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                      <a href="https://www.youtube.com/watch?time_continue=2&v=w_LOCHcunlI&embeds_euri=http%3A%2F%2F127.0.0.1%3A5500%2F&source_ve_path=MTM5MTE3LDEzOTExNw&feature=emb_logo" target="_blank"><img class="img-carousel border border-warning rounded border-5" src="/assets/images/thegingerbread.jpeg" alt="o biscoito assassino"></a>
+                      <div class="carousel-caption w-35 d-flex justify-content-center">
+                        <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background">O Biscoito Assassino</h5>
+                        
+                      </div>            
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="https://youtu.be/WPsNVUUkYF0" target="_blank" ><img class="img-carousel border border-warning rounded border-5" src="/assets/images/megasharkvscrocossauro.jpg" alt="MegaShark vs Crocossauro"></a>
+                      <div class="carousel-caption d-flex justify-content-center">
+                        <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background ">MegaShark vs Crocossauro</h5>                     
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="https://youtu.be/PINGZndsOEw" target="_blank" ><img class="img-carousel border border-warning rounded border-5" src="/assets/images/rambubrasileiro.png" alt="rambu brasileiro"></a>
+                      <div class="carousel-caption d-flex justify-content-center">
+                        <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background ">Rambu Brasileiro: O resgate da professora</h5>
+                       
+                      </div>
+                    </div> 
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="https://m.facebook.com/groups/488286001273236/posts/3619225284845943/" target="_blank"><img class="img-carousel border border-warning rounded border-5" src="/assets/images/cloudsassassins.jpg" alt="Palhaços Assassinos do Espaço Sideral"></a>
+                      <div class="carousel-caption d-flex justify-content-center">
+                        <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background ">Palhaços Assassinos do Espaço Sideral</h5>
+                        
+                      </div>
+                    </div> 
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="https://youtu.be/sh3qKKAS6i8" target="_blank" >
+                        <img class="img-carousel border border-warning rounded border-5" src="/assets/images/theblob.jpeg" alt="a bolha assassina">
+                      </a>
+                      <div class="carousel-caption d-flex justify-content-center">
+                        <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background ">A bolha assassina</h5>
+                       
+                      </div>
+                    </div> 
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="https://youtu.be/_0m0CoB1nAY" target="_blank">
+                        <img  class="img-carousel border border-warning rounded border-5" src="/assets/images/tomatos.jpeg" alt="O Ataque dos Tomates Assassinos">
+                      </a>
+                      <div class="carousel-caption d-flex justify-content-center">
+                        <h5 class="bg-success text-secondary w-75 fs-2  rounded d-none-small transparent-background ">O Ataque dos Tomates Assassinos</h5>
+                        
+                      </div>
                     </div>            
                   </div>
-                  <div class="carousel-item">
-                    <a href="https://youtu.be/WPsNVUUkYF0" target="_blank" ><img class="img-carousel border border-warning rounded border-5" src="/assets/images/megasharkvscrocossauro.jpg" alt="MegaShark vs Crocossauro"></a>
-                    <div class="carousel-caption d-flex justify-content-center">
-                      <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background ">MegaShark vs Crocossauro</h5>                     
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="https://youtu.be/PINGZndsOEw" target="_blank" ><img class="img-carousel border border-warning rounded border-5" src="/assets/images/rambubrasileiro.png" alt="rambu brasileiro"></a>
-                    <div class="carousel-caption d-flex justify-content-center">
-                      <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background ">Rambu Brasileiro: O resgate da professora</h5>
-                     
-                    </div>
-                  </div> 
-                  <div class="carousel-item">
-                    <a href="https://m.facebook.com/groups/488286001273236/posts/3619225284845943/" target="_blank"><img class="img-carousel border border-warning rounded border-5" src="/assets/images/cloudsassassins.jpg" alt="Palhaços Assassinos do Espaço Sideral"></a>
-                    <div class="carousel-caption d-flex justify-content-center">
-                      <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background ">Palhaços Assassinos do Espaço Sideral</h5>
-                      
-                    </div>
-                  </div> 
-                  <div class="carousel-item">
-                    <a href="https://youtu.be/sh3qKKAS6i8" target="_blank" >
-                      <img class="img-carousel border border-warning rounded border-5" src="/assets/images/theblob.jpeg" alt="a bolha assassina">
-                    </a>
-                    <div class="carousel-caption d-flex justify-content-center">
-                      <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background ">A bolha assassina</h5>
-                     
-                    </div>
-                  </div> 
-                  <div class="carousel-item">
-                    <a href="https://youtu.be/_0m0CoB1nAY" target="_blank">
-                      <img  class="img-carousel border border-warning rounded border-5" src="/assets/images/tomatos.jpeg" alt="O Ataque dos Tomates Assassinos">
-                    </a>
-                    <div class="carousel-caption d-flex justify-content-center">
-                      <h5 class="bg-success text-secondary w-75 fs-2  rounded d-none-small transparent-background ">O Ataque dos Tomates Assassinos</h5>
-                      
-                    </div>
-                  </div>            
-                </div>
-                <div>
-                  <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>          
-                  </button>
-                  <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>          
-                  </button>
-                </div>          
+                  <div>
+                    <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>          
+                    </button>
+                    <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>          
+                    </button>
+                  </div>          
+              </div>
             </div>
-          </div>
-        </div>        
-      </div>
-
+          </div>        
+        </div>
+      </section>
+      
       <section id="cardfilms">
         <div class="d-flex m-3 justify-content-evenly flex-wrap">
           <div class="card text-center card-films mb-3 bg-warning">
             <div class="ratio ratio-4x3">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/-byiE7MWO5Q?start=49" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
             <div class="card-body">
-              <h5 class="card-title">O Biscoito Assassino</h5>
+              <h5 class="card-title fw-bold">O Biscoito Assassino</h5>
               <p class="card-text">O Biscoito Assassino é a história de um biscoito que é possuído pela alma de um assassino que foi morto na cadeira elétrica. Decidido a se vingar da mulher responsável por sua morte, o biscoito sai à procura de vingança.</p>
-              <a href="https://www.youtube.com/watch?time_continue=2&v=w_LOCHcunlI&embeds_euri=http%3A%2F%2F127.0.0.1%3A5500%2F&source_ve_path=MTM5MTE3LDEzOTExNw&feature=emb_logo" target="_blank" class="btn btn-primary" id="o-bicoisto-assassino">Assistir</a>
+              <a href="https://www.youtube.com/watch?time_continue=2&v=w_LOCHcunlI&embeds_euri=http%3A%2F%2F127.0.0.1%3A5500%2F&source_ve_path=MTM5MTE3LDEzOTExNw&feature=emb_logo" target="_blank" class="btn btn-primary" id="o-bicoisto-assassino">Assistir</a>              
             </div>
+            <div class="note">
+              <div class="fw-bold">Nota:</div>
+            <div class="btn-group btn-group-sm w-75 align-item-center" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+              <label class="btn btn-outline-primary btn-note align-middle" for="btnradio1">Lixão</label>
+            
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+              <label class="btn btn-outline-primary btn-note align-middle" for="btnradio2">Doeu meus zói</label>
+            
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+              <label class="btn btn-outline-primary btn-note align-middle fs-10" for="btnradio3">Perdi 10 anos de vida</label>
+            </div>
+            <button type="button" class="btn btn-outline-success">Enviar</button>
+            </div>            
           </div>
           <div class="card text-center card-films mb-3 bg-warning">
             <div class="ratio ratio-4x3">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/AqZlCWkH4P0?start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Mega Shark vs Crocossauro</h5>
+              <h5 class="card-title fw-bold">Mega Shark vs Crocossauro</h5>
               <p class="card-text">Quando um animal pré-histórico, o Crocosaurus, se encontra com o Mega Shark, os oceanos entram em revolução. Ao mesmo tempo, cientistas tentam descobrir uma forma de acabar com o sangrento conflito.</p>
               <a href="https://youtu.be/WPsNVUUkYF0" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
@@ -134,7 +151,7 @@
             <div class="ratio ratio-4x3">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/6kHOlHaPexw?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
             <div class="card-body">
-              <h5 class="card-title">Rambo da Amazônia - O Resgate da Professora</h5>
+              <h5 class="card-title fw-bold">Rambo da Amazônia - O Resgate da Professora</h5>
               <p class="card-text">Cóti é um ex soldado das forças armadas, conhecido como Rambo da amazônia, agora vai encarar mais uma missão de resgate.</p>
               <a href="https://youtu.be/PINGZndsOEw" target="_blank"  class="btn btn-primary">Assistir</a>
             </div>
@@ -145,7 +162,7 @@
             <div class="ratio ratio-4x3">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/QaW0SSgYEpU?start=45" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
             <div class="card-body">
-              <h5 class="card-title">Palhaços Assassinos do Espaço Sideral</h5>
+              <h5 class="card-title fw-bold">Palhaços Assassinos do Espaço Sideral</h5>
               <p class="card-text">Um grupo de palhaços alienígenas chegam para raptar pessoas de cidades pequenas, envolvendo suas presas em algodão doce para comê-las depois.</p>
               <a href="https://m.facebook.com/groups/488286001273236/posts/3619225284845943/" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
@@ -154,7 +171,7 @@
             <div class="ratio ratio-4x3">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/gXgQ2QcKG-k?start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
             <div class="card-body">
-              <h5 class="card-title">A Bolha Assassina</h5>
+              <h5 class="card-title fw-bold">A Bolha Assassina</h5>
               <p class="card-text">Em uma cidade da Califórnia, estudantes descobrem uma estranha substância gelatinosa que derrete a carne humana. A substância começa a crescer descontroladamente atacando alguns moradores, até que uma equipe do exército é enviada para detê-la.</p>
               <a href="https://youtu.be/sh3qKKAS6i8" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
@@ -163,7 +180,7 @@
             <div class="ratio ratio-4x3">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/wmZGKP4k2Oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
             <div class="card-body">
-              <h5 class="card-title">O Ataque dos Tomates Assassinos</h5>
+              <h5 class="card-title fw-bold">O Ataque dos Tomates Assassinos</h5>
               <p class="card-text">A situação está saindo do controle no departamento de agricultura, e tomates estão atacando as pessoas. Os tomates crescem indefinidamente e atingem circunferências enormes, atirar com espingardas e outras armas de fogo já não adianta mais.</p>
               <a href="https://youtu.be/_0m0CoB1nAY" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
@@ -172,10 +189,8 @@
 
         
       </section>  
-
-      
-
     </main>
+
     <footer>
       <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid">

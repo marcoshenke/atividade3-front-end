@@ -19,8 +19,16 @@
     color: #c1c1c1ff !important;
 }
 
+.container {
+    max-width: 1100px !important;
+}
+
+#carousel {
+    margin-top: 5rem;
+}
+
 .card-films {
-    width: 28rem;
+    width: 23rem;
     
 }
 
@@ -30,13 +38,6 @@
     
 }
 
-.div-h5-40 {
-    width: 40% !important;
-}
-
-.div-h5-50 {
-    width: 40% !important;
-}
 
 main {
     background-image: url("/assets/images/backgroundimagemain.jpg") !important;
@@ -46,9 +47,19 @@ main {
     background-color: #0d160bff;
 }
 
+.btn-note {
+   
+  vertical-align: middle;
+}
+
 .w-90 {
     width: 90% !important;
 }
+
+.transparent-background {
+    background-color: rgba(3, 1, 1, 0.733) !important;
+}
+
 
 @media only screen and (max-width: 425px){
     form {
@@ -72,7 +83,4 @@ main {
     }
 }
 
-.transparent-background {
-    background-color: rgba(3, 1, 1, 0.733) !important;
-}
 
