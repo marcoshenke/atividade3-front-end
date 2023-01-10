@@ -114,7 +114,7 @@
       
       <section id="cardfilms">
         <div class="d-flex m-3 justify-content-evenly flex-wrap">
-          <div class="card text-center card-films mb-3 bg-warning">
+          <div class="card text-center card-films mb-3 bg-warning justify-content-around">
             <div class="ratio ratio-4x3">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/-byiE7MWO5Q?start=49" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
             <div class="card-body">
@@ -123,18 +123,36 @@
               <a href="https://www.youtube.com/watch?time_continue=2&v=w_LOCHcunlI&embeds_euri=http%3A%2F%2F127.0.0.1%3A5500%2F&source_ve_path=MTM5MTE3LDEzOTExNw&feature=emb_logo" target="_blank" class="btn btn-primary" id="o-bicoisto-assassino">Assistir</a>              
             </div>
             <div class="note">
-              <div class="fw-bold">Nota:</div>
-            <div class="btn-group btn-group-sm w-75 align-item-center" role="group" aria-label="Basic radio toggle button group">
+            <div class="fw-bold">Nota:</div>
+            <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
               <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-              <label class="btn btn-outline-primary btn-note align-middle" for="btnradio1">Lixão</label>
+              <label class="btn btn-outline-info btn-note align-middle" for="btnradio1">Lixão</label>
             
               <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-              <label class="btn btn-outline-primary btn-note align-middle" for="btnradio2">Doeu meus zói</label>
+              <label class="btn btn-outline-info btn-note align-middle" for="btnradio2">Doeu meus zói</label>
             
               <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-              <label class="btn btn-outline-primary btn-note align-middle fs-10" for="btnradio3">Perdi 10 anos de vida</label>
+              <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio3">Perdi 10 anos de vida</label>
+                
             </div>
-            <button type="button" class="btn btn-outline-success">Enviar</button>
+            <div id="modal" class="my-1">
+              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Envie
+              </button>
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header text-white bg-success">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>              
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+                      
+
             </div>            
           </div>
           <div class="card text-center card-films mb-3 bg-warning">
@@ -146,6 +164,38 @@
               <p class="card-text">Quando um animal pré-histórico, o Crocosaurus, se encontra com o Mega Shark, os oceanos entram em revolução. Ao mesmo tempo, cientistas tentam descobrir uma forma de acabar com o sangrento conflito.</p>
               <a href="https://youtu.be/WPsNVUUkYF0" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
+            <div class="note">
+              <div class="fw-bold">Nota:</div>
+              <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked>
+                <label class="btn btn-outline-info btn-note align-middle" for="btnradio4">Lixão</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle" for="btnradio5">Doeu meus zói</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio6">Perdi 10 anos de vida</label>
+                  
+              </div>
+              <div id="modal" class="my-1">
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Envie
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header text-white bg-success">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                      </div>              
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+                        
+  
+              </div> 
           </div>
           <div class="card  text-center card-films mb-3 bg-warning">
             <div class="ratio ratio-4x3">
@@ -155,19 +205,93 @@
               <p class="card-text">Cóti é um ex soldado das forças armadas, conhecido como Rambo da amazônia, agora vai encarar mais uma missão de resgate.</p>
               <a href="https://youtu.be/PINGZndsOEw" target="_blank"  class="btn btn-primary">Assistir</a>
             </div>
+            <div class="note">
+              <div class="fw-bold">Nota:</div>
+              <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off" checked>
+                <label class="btn btn-outline-info btn-note align-middle" for="btnradio7">Lixão</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle" for="btnradio8">Doeu meus zói</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio9">Perdi 10 anos de vida</label>
+                  
+              </div>
+              <div id="modal" class="my-1">
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Envie
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header text-white bg-success">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      
+                      <div class="modal-footer bg-success">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                        
+  
+              </div> 
+            
           </div>                         
         </div>
         <div class="d-flex m-3 justify-content-evenly flex-wrap">
-          <div class="card text-center card-films mb-3 bg-warning">
+          <div class="card text-center card-films mb-3 bg-warning justify-content-between">
             <div class="ratio ratio-4x3">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/QaW0SSgYEpU?start=45" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/QaW0SSgYEpU?start=45" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+            </div>
             <div class="card-body">
               <h5 class="card-title fw-bold">Palhaços Assassinos do Espaço Sideral</h5>
               <p class="card-text">Um grupo de palhaços alienígenas chegam para raptar pessoas de cidades pequenas, envolvendo suas presas em algodão doce para comê-las depois.</p>
               <a href="https://m.facebook.com/groups/488286001273236/posts/3619225284845943/" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
+            <div class="note">
+              <div class="fw-bold">Nota:</div>
+              <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio10" autocomplete="off" checked>
+                <label class="btn btn-outline-info btn-note align-middle" for="btnradio10">Lixão</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio11" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle" for="btnradio11">Doeu meus zói</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio12">Perdi 10 anos de vida</label>
+                  
+              </div>
+              <div id="modal" class="my-1">
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Envie
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header text-white bg-success">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      
+                      <div class="modal-footer bg-success">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                        
+  
+              </div> 
           </div>
-          <div class="card text-center card-films mb-3 bg-warning">
+          <div class="card text-center card-films bg-warning">
             <div class="ratio ratio-4x3">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/gXgQ2QcKG-k?start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
             <div class="card-body">
@@ -175,6 +299,42 @@
               <p class="card-text">Em uma cidade da Califórnia, estudantes descobrem uma estranha substância gelatinosa que derrete a carne humana. A substância começa a crescer descontroladamente atacando alguns moradores, até que uma equipe do exército é enviada para detê-la.</p>
               <a href="https://youtu.be/sh3qKKAS6i8" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
+            <div class="note">
+              <div class="fw-bold">Nota:</div>
+              <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio13" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle" for="btnradio13">Lixão</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio14" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle" for="btnradio14">Doeu meus zói</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio15" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio15">Perdi 10 anos de vida</label>
+                  
+              </div>
+              <div id="modal" class="my-1">
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Envie
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header text-white bg-success">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      
+                      <div class="modal-footer bg-success">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                        
+  
+            </div> 
           </div>
           <div class="card text-center card-films mb-3 bg-warning">
             <div class="ratio ratio-4x3">
@@ -184,6 +344,42 @@
               <p class="card-text">A situação está saindo do controle no departamento de agricultura, e tomates estão atacando as pessoas. Os tomates crescem indefinidamente e atingem circunferências enormes, atirar com espingardas e outras armas de fogo já não adianta mais.</p>
               <a href="https://youtu.be/_0m0CoB1nAY" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
+            <div class="note">
+              <div class="fw-bold">Nota:</div>
+              <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio16" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle" for="btnradio16">Lixão</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio17" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle" for="btnradio17">Doeu meus zói</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio18" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio18">Perdi 10 anos de vida</label>
+                  
+              </div>
+              <div id="modal" class="my-1">
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Envie
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header text-white bg-success">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      
+                      <div class="modal-footer bg-success">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                        
+  
+            </div> 
           </div>                        
         </div>
 
