@@ -27,6 +27,11 @@
     margin-top: 5rem;
 }
 
+.card {
+    gap: 0.2rem;
+    height: 44rem !important;
+}
+
 .card-films {
     width: 23rem;
     

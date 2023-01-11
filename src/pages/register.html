@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" content="default 'self">
+    <meta name="description" content="Site de filmes trashs, filmes ruins mas que são legais por conta disso"/>
     <title>Cadastre-se</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/app.css">
@@ -18,11 +19,11 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/src/index.html"><img class="img-logo"src="/assets/images/logopoopflix.png" alt="logopoopflix"><span class="fs-4 fw-bold">PoopFlix</span></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="/src/index.html"><img class="img-logo"src="/assets/images/logopoopflix.png" alt="logopoopflix"><span class="fs-4 fw-bold link-hover">PoopFlix</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent1">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">              
               <li class="nav-item">
                 <a class="nav-link fs-5 text-white link-hover fw-bold" href="listfilms.html">Filmes trashs</a>
@@ -41,7 +42,7 @@
       </nav>
     </header>
     <main class="d-flex flex-column justify-content-center align-items-center">
-        <form class="d-flex flex-column justify-content-center align-items-center">
+        <form class="d-flex flex-column ">
             <h1 class="text-center fs-2 text-white">Cadastro</h1>
             <div class="my-1">
                 <label for="name" class="form-label text-white fs-3">Nome completo</label>
@@ -62,50 +63,49 @@
             </div>
             <div class="form-check my-1 d-flex align-items-center gap-2">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label text-secondary text-bold fs-5" for="exampleCheck1">Aceito os termos de uso</label>              
-            </div>
-            
-            <button type="button" class="btn btn-outline-secondary text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Termos de uso
-            </button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content bg-success text-white">
-                  <div class="modal-header justify-content-center">
-                    <h1 class="modal-title fs-3" id="exampleModalLabel">Termos de uso</h1>
-                    
-                  </div>
-                  <div class="modal-body fs-4">
-                   Concordo em vender minha alma para o PoopFlix e os Illuminatis em troca de ver alguns filmes muito ruins.
-                  </div>
-                  <img src="/assets/images/illuminati.jpg" alt="simbolo illuminati">
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>  
-            
-            <button type="button" class="btn my-1 w-75 align-items-center fs-5 fw-bold btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-              Cadastrar
-            </button>
-            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content bg-success text-white">
-                  <div class="modal-header justify-content-center">
-                    <h1 class="modal-title fs-3" id="exampleModalLabel">Cadastrado com sucesso</h1>
-                    
-                  </div>                  
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>  
-          
+              <label class="form-check-label text-secondary text-bold fs-5" for="exampleCheck1">Aceito os</label>
+              <button type="button" class="btn btn-outline-secondary text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Termos de uso
+              </button>              
+            </div>          
           </form>
+          
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-success text-white">
+                <div class="modal-header justify-content-center">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Termos de uso</h1>
+                  
+                </div>
+                <div class="modal-body fs-4 text-center">
+                 Concordo em vender minha alma para o PoopFlix e os Illuminatis em troca de assistir alguns filmes muito ruins.
+                </div>
+                <img src="/assets/images/illuminati.jpg" alt="simbolo illuminati">
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>  
+          
+          <button type="button" class="btn my-1 align-items-center fs-5 fw-bold btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Cadastrar
+          </button>
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-success text-white">
+                <div class="modal-header justify-content-center">
+                  <h1 class="modal-title fs-3" id="exampleModalLabel">Cadastrado com sucesso</h1>
+                  
+                </div>                  
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>  
 
       
 
