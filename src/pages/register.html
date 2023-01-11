@@ -64,22 +64,21 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label text-secondary text-bold fs-5" for="exampleCheck1">Aceito os termos de uso</label>              
             </div>
-            <!-- Button trigger modal -->
+            
             <button type="button" class="btn btn-outline-secondary text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Termos de uso
             </button>
-
-
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Termos de uso</h1>
+                <div class="modal-content bg-success text-white">
+                  <div class="modal-header justify-content-center">
+                    <h1 class="modal-title fs-3" id="exampleModalLabel">Termos de uso</h1>
                     
                   </div>
-                  <div class="modal-body">
-                   Concordo em vender minha alma para o PoopFlix em troca de ver alguns filmes muito ruins.
+                  <div class="modal-body fs-4">
+                   Concordo em vender minha alma para o PoopFlix e os Illuminatis em troca de ver alguns filmes muito ruins.
                   </div>
+                  <img src="/assets/images/illuminati.jpg" alt="simbolo illuminati">
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                    
@@ -88,7 +87,24 @@
               </div>
             </div>  
             
-            <button type="submit" class="btn my-1 w-75 align-items-center fs-5 fw-bold btn-primary">Cadastrar</button>
+            <button type="button" class="btn my-1 w-75 align-items-center fs-5 fw-bold btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              Cadastrar
+            </button>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content bg-success text-white">
+                  <div class="modal-header justify-content-center">
+                    <h1 class="modal-title fs-3" id="exampleModalLabel">Cadastrado com sucesso</h1>
+                    
+                  </div>                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>  
+          
           </form>
 
       

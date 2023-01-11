@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content=" default 'self ; child-src 'self' https://www.youtube.com ;">
+    <meta http-equiv="Content-Security-Policy" content=" default 'self ; child-src 'self' https://www.youtube.com ; script 'self' https://kit.fontawesome.com">
     <title>PoopFlix</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/app.css">
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f152a5af6c.js" crossorigin="anonymous"></script>
     
   </head>
   <body>     
@@ -42,44 +43,44 @@
         <div class="container">
           <div class="row rounded">
             <div class="container py-5 col-8 col-8-sm">
-              <div class="carousel slide" data-bs-ride="carousel" id="ads">
+              <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="ads">
                   <div class="carousel-indicators">
                     <button class="active" data-bs-target="ads" data-bs-slide-to="0"></button>
-                    <button class="" data-bs-target="ads" data-bs-slide-to="1"></button>
-                    <button class="" data-bs-target="ads" data-bs-slide-to="2"></button>
-                    <button class="" data-bs-target="ads" data-bs-slide-to="3"></button>
-                    <button class="" data-bs-target="ads" data-bs-slide-to="4"></button>
-                    <button class="" data-bs-target="ads" data-bs-slide-to="5"></button>
+                    <button data-bs-target="ads" data-bs-slide-to="1"></button>
+                    <button data-bs-target="ads" data-bs-slide-to="2"></button>
+                    <button data-bs-target="ads" data-bs-slide-to="3"></button>
+                    <button data-bs-target="ads" data-bs-slide-to="4"></button>
+                    <button data-bs-target="ads" data-bs-slide-to="5"></button>
                   </div>
                   <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="carousel-item active" data-bs-interval="2000">
                       <a href="https://www.youtube.com/watch?time_continue=2&v=w_LOCHcunlI&embeds_euri=http%3A%2F%2F127.0.0.1%3A5500%2F&source_ve_path=MTM5MTE3LDEzOTExNw&feature=emb_logo" target="_blank"><img class="img-carousel border border-warning rounded border-5" src="/assets/images/thegingerbread.jpeg" alt="o biscoito assassino"></a>
                       <div class="carousel-caption w-35 d-flex justify-content-center">
                         <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background">O Biscoito Assassino</h5>
                         
                       </div>            
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
+                    <div class="carousel-item" data-bs-interval="2000">
                       <a href="https://youtu.be/WPsNVUUkYF0" target="_blank" ><img class="img-carousel border border-warning rounded border-5" src="/assets/images/megasharkvscrocossauro.jpg" alt="MegaShark vs Crocossauro"></a>
                       <div class="carousel-caption d-flex justify-content-center">
                         <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background ">MegaShark vs Crocossauro</h5>                     
                       </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
+                    <div class="carousel-item" data-bs-interval="2000">
                       <a href="https://youtu.be/PINGZndsOEw" target="_blank" ><img class="img-carousel border border-warning rounded border-5" src="/assets/images/rambubrasileiro.png" alt="rambu brasileiro"></a>
                       <div class="carousel-caption d-flex justify-content-center">
                         <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background ">Rambu Brasileiro: O resgate da professora</h5>
                        
                       </div>
                     </div> 
-                    <div class="carousel-item" data-bs-interval="3000">
+                    <div class="carousel-item" data-bs-interval="2000">
                       <a href="https://m.facebook.com/groups/488286001273236/posts/3619225284845943/" target="_blank"><img class="img-carousel border border-warning rounded border-5" src="/assets/images/cloudsassassins.jpg" alt="Palhaços Assassinos do Espaço Sideral"></a>
                       <div class="carousel-caption d-flex justify-content-center">
                         <h5 class="bg-success text-secondary w-75 fs-2 rounded d-none-small transparent-background ">Palhaços Assassinos do Espaço Sideral</h5>
                         
                       </div>
                     </div> 
-                    <div class="carousel-item" data-bs-interval="3000">
+                    <div class="carousel-item" data-bs-interval="2000">
                       <a href="https://youtu.be/sh3qKKAS6i8" target="_blank" >
                         <img class="img-carousel border border-warning rounded border-5" src="/assets/images/theblob.jpeg" alt="a bolha assassina">
                       </a>
@@ -88,7 +89,7 @@
                        
                       </div>
                     </div> 
-                    <div class="carousel-item" data-bs-interval="3000">
+                    <div class="carousel-item" data-bs-interval="2000">
                       <a href="https://youtu.be/_0m0CoB1nAY" target="_blank">
                         <img  class="img-carousel border border-warning rounded border-5" src="/assets/images/tomatos.jpeg" alt="O Ataque dos Tomates Assassinos">
                       </a>
@@ -123,16 +124,16 @@
               <a href="https://www.youtube.com/watch?time_continue=2&v=w_LOCHcunlI&embeds_euri=http%3A%2F%2F127.0.0.1%3A5500%2F&source_ve_path=MTM5MTE3LDEzOTExNw&feature=emb_logo" target="_blank" class="btn btn-primary" id="o-bicoisto-assassino">Assistir</a>              
             </div>
             <div class="note">
-            <div class="fw-bold">Nota:</div>
-            <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
-              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-              <label class="btn btn-outline-info btn-note align-middle" for="btnradio1">Lixão</label>
+            <div class="fw-bold my-2">Nota:</div>
+            <div class="btn-group btn-group-sm w-50 gap-2 " role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+              <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio1">💩</label>
             
               <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-              <label class="btn btn-outline-info btn-note align-middle" for="btnradio2">Doeu meus zói</label>
+              <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio2"><i class="fa-solid fa-trash"></i></label>
             
               <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-              <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio3">Perdi 10 anos de vida</label>
+              <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio3">🤮</label>
                 
             </div>
             <div id="modal" class="my-1">
@@ -141,8 +142,8 @@
               </button>
               <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header text-white bg-success">
+                  <div class="modal-content ">
+                    <div class="modal-header text-white bg-success border border-0">
                       <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                     </div>              
@@ -165,16 +166,16 @@
               <a href="https://youtu.be/WPsNVUUkYF0" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
             <div class="note">
-              <div class="fw-bold">Nota:</div>
-              <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked>
-                <label class="btn btn-outline-info btn-note align-middle" for="btnradio4">Lixão</label>
+              <div class="fw-bold my-2">Nota:</div>
+              <div class="btn-group btn-group-sm w-50 gap-2 " role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio4">💩</label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle" for="btnradio5">Doeu meus zói</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio5"><i class="fa-solid fa-trash"></i></label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio6">Perdi 10 anos de vida</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio6">🤮</label>
                   
               </div>
               <div id="modal" class="my-1">
@@ -183,8 +184,8 @@
                 </button>
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header text-white bg-success">
+                    <div class="modal-content ">
+                      <div class="modal-header text-white bg-success border border-0">
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                       </div>              
@@ -206,16 +207,16 @@
               <a href="https://youtu.be/PINGZndsOEw" target="_blank"  class="btn btn-primary">Assistir</a>
             </div>
             <div class="note">
-              <div class="fw-bold">Nota:</div>
-              <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off" checked>
-                <label class="btn btn-outline-info btn-note align-middle" for="btnradio7">Lixão</label>
+              <div class="fw-bold my-2">Nota:</div>
+              <div class="btn-group btn-group-sm w-50 gap-2 " role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio7">💩</label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle" for="btnradio8">Doeu meus zói</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio8"><i class="fa-solid fa-trash"></i></label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio9">Perdi 10 anos de vida</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio9">🤮</label>
                   
               </div>
               <div id="modal" class="my-1">
@@ -224,16 +225,12 @@
                 </button>
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header text-white bg-success">
+                    <div class="modal-content ">
+                      <div class="modal-header text-white bg-success border border-0">
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      
-                      <div class="modal-footer bg-success">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        
-                      </div>
+                      </div>              
+                      
                     </div>
                   </div>
                 </div>
@@ -255,16 +252,16 @@
               <a href="https://m.facebook.com/groups/488286001273236/posts/3619225284845943/" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
             <div class="note">
-              <div class="fw-bold">Nota:</div>
-              <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio10" autocomplete="off" checked>
-                <label class="btn btn-outline-info btn-note align-middle" for="btnradio10">Lixão</label>
+              <div class="fw-bold my-2">Nota:</div>
+              <div class="btn-group btn-group-sm w-50 gap-2 " role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio10" autocomplete="off">
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio10">💩</label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio11" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle" for="btnradio11">Doeu meus zói</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio11"><i class="fa-solid fa-trash"></i></label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio12">Perdi 10 anos de vida</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio12">🤮</label>
                   
               </div>
               <div id="modal" class="my-1">
@@ -273,16 +270,12 @@
                 </button>
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header text-white bg-success">
+                    <div class="modal-content ">
+                      <div class="modal-header text-white bg-success border border-0">
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      
-                      <div class="modal-footer bg-success">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        
-                      </div>
+                      </div>              
+                      
                     </div>
                   </div>
                 </div>
@@ -300,16 +293,16 @@
               <a href="https://youtu.be/sh3qKKAS6i8" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
             <div class="note">
-              <div class="fw-bold">Nota:</div>
-              <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
+              <div class="fw-bold my-2">Nota:</div>
+              <div class="btn-group btn-group-sm w-50 gap-2 " role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio13" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle" for="btnradio13">Lixão</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio13">💩</label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio14" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle" for="btnradio14">Doeu meus zói</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio14"><i class="fa-solid fa-trash"></i></label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio15" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio15">Perdi 10 anos de vida</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio15">🤮</label>
                   
               </div>
               <div id="modal" class="my-1">
@@ -318,23 +311,19 @@
                 </button>
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header text-white bg-success">
+                    <div class="modal-content ">
+                      <div class="modal-header text-white bg-success border border-0">
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      
-                      <div class="modal-footer bg-success">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        
-                      </div>
+                      </div>              
+                      
                     </div>
                   </div>
                 </div>
               </div>
                         
   
-            </div> 
+              </div> 
           </div>
           <div class="card text-center card-films mb-3 bg-warning">
             <div class="ratio ratio-4x3">
@@ -345,16 +334,16 @@
               <a href="https://youtu.be/_0m0CoB1nAY" target="_blank" class="btn btn-primary">Assistir</a>
             </div>
             <div class="note">
-              <div class="fw-bold">Nota:</div>
-              <div class="btn-group btn-group-sm w-100 " role="group" aria-label="Basic radio toggle button group">
+              <div class="fw-bold my-2">Nota:</div>
+              <div class="btn-group btn-group-sm w-50 gap-2 " role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio16" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle" for="btnradio16">Lixão</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio16">💩</label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio17" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle" for="btnradio17">Doeu meus zói</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio17"><i class="fa-solid fa-trash"></i></label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio18" autocomplete="off">
-                <label class="btn btn-outline-info btn-note align-middle fs-10" for="btnradio18">Perdi 10 anos de vida</label>
+                <label class="btn btn-outline-info btn-note align-middle fs-4 rounded-5" for="btnradio18">🤮</label>
                   
               </div>
               <div id="modal" class="my-1">
@@ -363,23 +352,19 @@
                 </button>
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header text-white bg-success">
+                    <div class="modal-content ">
+                      <div class="modal-header text-white bg-success border border-0">
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua nota foi enviada, gratiluz!</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      
-                      <div class="modal-footer bg-success">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        
-                      </div>
+                      </div>              
+                      
                     </div>
                   </div>
                 </div>
               </div>
                         
   
-            </div> 
+              </div> 
           </div>                        
         </div>
 
