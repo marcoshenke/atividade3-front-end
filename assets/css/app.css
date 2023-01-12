@@ -70,6 +70,12 @@ main {
     form {
         width: 90% !important;
     }
+
+    .card-films {
+        width: 20rem;
+        height: 43rem !important;
+        
+    }
 }
 
 @media only screen and (max-width: 576px) {
