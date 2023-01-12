@@ -11,15 +11,15 @@
 
 
 $theme-colors: (
-  'primary':    #91562dff,
+  'primary':    rgb(240, 111, 18),
   'secondary':  #ed3124ff,
   'success':    #0d160bff,
-  'info':       #785589ff,
+  'info':       rgb(190, 127, 221),
   'warning':    #c1c1c1ff,
   
 );
 
-@import "/node_modules/bootstrap/scss/bootstrap"
+@import "../../node_modules/bootstrap/scss/bootstrap"
 
 // @import "node_modules/bootstrap/scss/bootstrap";
 
