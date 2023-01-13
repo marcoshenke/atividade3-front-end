@@ -25,14 +25,12 @@
 }
 
 .card-films {
-    width: 23rem;
-    
+    width: 23rem;    
 }
 
 .img-carousel {
     width: 100%;
-    height: 100%;
-    
+    height: 100%;    
 }
 
 
@@ -44,8 +42,7 @@ main {
     background-color: #0d160bff;
 }
 
-.btn-note {
-   
+.btn-note {   
   vertical-align: middle;
 }
 
@@ -65,8 +62,7 @@ main {
 
     .card-films {
         width: 20rem;
-        height: 43rem !important;
-        
+        height: 43rem !important;        
     }
 }
 
